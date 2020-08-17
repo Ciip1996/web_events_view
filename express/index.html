@@ -1,0 +1,53 @@
+<!-- Enter your HTML code here. Plagiarism will NOT be tolerated!
+Remember, your solution will be manually evaluated within 15 business days. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VanHack's Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://connect.facebook.net/en_US/sdk.js" nonce="yvx3LJa1"></script><script nonce="yvx3LJa1"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e055057057.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id="main-container">
+        <ul class="navbar flex-center">
+            <li><span class="navbar-title">VanHack</span></li>
+        </ul>
+        <div class="events-wrapper">
+            <span class="subtitle">Event Types</span>
+            <div id="event-categories-wrapper" class="cards-wrapper unselectable"></div>
+            <span class="subtitle">Upcoming Events</span>
+            <div id="events-wrapper" class="cards-wrapper"></div>
+        </div>
+    </div>
+    <div id="modal" class="modal-hidden modal">
+        <span id="close-button"><i class="fas fa-times-circle"></i></span>
+        <img id="modal-image" src="http://lorempixel.com/640/480/transport" class="modal-image" alt="...">
+        <div class="modal-body">
+            <h5 id="modal-title" class="modal-title"></h5>
+            <a id="modal-date" class="modal-subtitle"></a>
+            <a id="modal-location" class="modal-subtitle"></a>
+            <p id="modal-description" class="modal-text"></p>
+            <span id="share-button"><a href="https://www.facebook.com/sharer.php?u=https://vanhack.com/platform/#/events"><i class="fab fa-facebook"></i></a></span>
+            <input id="modal-button" type="button" class="inputs card-button" value="Apply" />
+        </div>
+    </div>
+    <div id="applied-modal" class="modal-hidden modal">
+        <span id="close-button"><i class="fas fa-times-circle"></i></span>
+        <div class="modal-body">
+            <div class="flex-center">
+                <i id="success-icon" class="fas fa-check-circle applied-icon"></i>
+                <h5 id="success-title" class="modal-title">You applied successfully!</h5>
+            </div><br>
+            <a id="success-message" class="modal-subtitle flex-center">Everything went well in your application.</a><br>
+            <a id="success-location" class="modal-subtitle flex-center">Location: </a><br>
+            <a id="success-date" class="modal-subtitle flex-center">Date: </a><br>
+        </div>
+    </div>
+
+</body>
+</html>
